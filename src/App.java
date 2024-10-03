@@ -1,15 +1,15 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Scannner inputan =new scanner(System.in);
+        Scanner inputan =new Scanner(System.in);
 
-        Double perkilo = 28000;
+        double perkilo = 28000.0;
         System.out.println("masukan (kg) telur yang dibeli: ");
-        Double kilotelur = inputan.nexDouble();
+        Double kilotelur = inputan.nextDouble();
         
         System.out.print("masukan uang bayar");
-        Double uangbayar = inputan.nexDouble();
+        Double uangbayar = inputan.nextDouble();
 
         Double hargatelur = kilotelur * perkilo;
         Double kembalian = uangbayar - hargatelur;
